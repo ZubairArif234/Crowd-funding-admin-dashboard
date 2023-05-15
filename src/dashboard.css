@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .dashboardcardtopdiv{
+    width: 100%;
     /* background-color: aqua; */
 }
 .dashboardcardtopone{
-    /* border-top: 3px solid orangered; */
-    /* background-color: yellow; */
+   
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 30px 30px;
 
-    /* width: 290px; */
+   width: 100%;
     margin-bottom:20px ;
 }
 .dashboardcardtoponesmalltext{
@@ -37,6 +37,8 @@
 .dashboardtotalusermaindiv{
     /* background-color: aqua; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 30px;
+    width: 100%;
 
 }
 .dashboardtotaluseronebigtext{
@@ -51,9 +53,7 @@
     /* border-bottom: 2px solid gray; */
 
 }
-.dashboardtotalusermaindiv{
-    padding: 10px 30px;
-}
+
 .overviewtotalone{
     font-family:Rubik;
     font-weight: 600;
@@ -64,6 +64,7 @@
 }
 .overviewdivone{
     /* background-color: blue; */
+    width: 100%;
     margin: 20px 0px;
 }
 .topchartbar{
@@ -99,7 +100,7 @@
     border-radius: 20px;
     position: absolute;
     /* height: 20px; */
-    background-color: #6100B3;
+    /* background-color: #6100B3; */
 }
 .linechartmaindiv{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -118,6 +119,13 @@
     justify-content: space-evenly;
 }
 
+.topheaderdashboardmainbox{
+    /* background-color: #6100B3; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* .apexcharts-canvas,
 .apexcharts-canvas svg,
 .apexcharts-canvas svg .apexcharts-grid,
@@ -130,13 +138,43 @@ line{
     width: 100%;
 } */
 
-
-
-
-
-@media only screen and (max-width: 600px) {
-.ant-layout-sider-children{
-position: absolute;
-width: '40px';
+.graphimgtopboxes{
+    display:'flex' ;
+    margin:'0 auto';
+    justify-content:'center' ;
+      /* background-color: #6100B3; */
 }
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+.graphimgtopboxes{
+    display: none;
+}
+/* .dashboardcardtopone{} */
+
+.dashboardcardtoponebigtext{
+    font-size: 20px;
+}
+.dashboardcardtopone{
+    /* font-size: 20px; */
+    /* border-top: 3px solid orangered; */
+    /* background-color: yellow; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px 10px;
+
+    /* width: 70%; */
+    margin-bottom:20px ;
+}
+.dashboardtotalusermaindiv{
+    /* background-color: aqua; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 30px;
+    width: 80%;
+    margin:  0  auto;
+
+}
+
 }
