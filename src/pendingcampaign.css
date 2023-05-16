@@ -1,0 +1,133 @@
+
+
+
+.popcardheading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #062A4D;
+    /* background-color: #3A516C; */
+    line-height: 20px;
+    padding-top: 0px;
+  }
+  .popprogressprice {
+ /* background-color: orange; */
+    width: 100%;
+    line-height: 20px;
+  }
+
+  .pendingcampaingcards{
+    color: white;
+    background-color: #6100B3;
+    border: none;
+    padding: 5px;
+    width: 100%;
+
+  }
+  .poppriceanddetail {
+    display: flex;
+    
+    justify-content: space-between;
+  }
+  .popcardprice {
+    font-weight: 700;
+    font-size: 13px;
+    color: #062A4D;
+  }
+  .popcardpricedetail {
+    color: #6F7172;
+    font-weight: 400;
+    font-size: 11px;
+  }
+  .popcardpricedetailend {
+    text-align: end;
+    color: #6F7172;
+    font-weight: 400;
+    font-size: 11px;
+  }
+  .ant-card-body{
+    padding:  5px 10px !important;
+  }
+  .pendingtopimgbtn{
+    background-color: #FFBE0B;
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  
+  .poppriceanddetailbelow {
+    display: flex;
+    justify-content: space-between;
+  
+    border-top: 1px solid rgb(224, 224, 224);
+  }
+  
+  .popcardpricebelow {
+    font-family: Rubik;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3A516C;
+    text-transform: uppercase;
+  
+  }
+
+  .popularcarddiv {
+    display: flex;
+    /* background-color: #6100B3; */
+    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  
+  }
+  .popmoreproj {
+    font-family: Rubik;
+    width: 150px;
+   
+    text-transform: uppercase;
+    border: 1px solid #EAD2FF;
+    background-color: white;
+    font-size: 11px;
+    color: #062A4D;
+    font-weight: 400;
+   
+    margin: 10px auto;
+    margin-bottom: 40px;
+    
+  
+    padding: 10px;
+  }
+  .popmoreproj:hover{
+    background-color: #062A4D;
+    color: white;
+   
+  }
+  .popularsuparmaindiv {
+    padding: 10px 40px;
+    
+    background-color: #F9FAFF;
+  
+  }
+  .pendingcampiagnsubtittle{
+    font-size: 13px;
+    line-height: 1px;
+    font-weight: 500;
+    font-family: Rubik;
+    /* font-size: 20px; */
+    color: gray;
+    margin-left: 30px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+  .popularsuparmaindiv{
+    padding: 0px;
+  }
+
+  }
+
+  

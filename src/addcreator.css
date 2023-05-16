@@ -1,0 +1,89 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.addcreatorformrow{
+    /* background-color: orange; */
+    padding: 10px 70px;
+    /* height: 100%; */
+}
+.addcreatorformcol{
+    /* background-color: orangered; */
+}
+.addcreatorlabel{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Rubik;
+    color: #140F26;
+    margin-bottom: 5px;
+}
+.addcreatorinput{
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    /* border: 1px solid #6100B3; */
+    border: 1px solid gray;
+}
+.addcreatortextarea{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 98.5%;
+    padding: 7px;
+    /* margin-top: 5px; */
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    /* border: 1px solid #6100B3; */
+    
+}
+.addcreatorsubmitbtn{
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 98.5%;
+    background-color: #6100B3;
+    color: white;
+    font-weight: 500;
+    font-family: Rubik;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.addcreatorheading{
+    font-weight: 500;
+    font-family: Rubik;
+    font-size: 20px;
+    color: gray;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .addcreatorformrow{
+        /* background-color: orange; */
+        padding: 0px 0px;
+        /* height: 100%; */
+    }
+    .addcreatorheading{
+        font-weight: 500;
+        font-family: Rubik;
+        font-size: 20px;
+        color: gray;
+        margin-left: 0px;
+    }
+}
+
+
+

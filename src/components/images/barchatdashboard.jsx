@@ -154,7 +154,7 @@ const BarChart = () => {
   const [options] = useState({
     chart: {
       type: "bar",
-      height: 700,
+      height: 900,
     },
     plotOptions: {
       bar: {
@@ -195,7 +195,7 @@ const BarChart = () => {
         
     </div>
     <div className="linechartdiv">
-        <ReactApexChart height={290} width={'85%'} options={options} series={series} type="bar"  />
+        <ReactApexChart height={340} width={'85%'} options={options} series={series} type="bar"  />
         {/* <ReactApexChart options={options} series={series} type="line" height={385} width={'85%'} /> */}
 
     </div>

@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Dashboard from './pages/dashboard';
-import PersistentDrawerLeft from './pages/dashboard2';
+
+import Router from './pages/router';
 
 function App() {
   return (
     <div>
-    {/* <Dashboard/> */}
-    <PersistentDrawerLeft/>
+  <Router/>
     </div>
   );
 }
