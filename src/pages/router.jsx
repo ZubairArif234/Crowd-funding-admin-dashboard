@@ -18,6 +18,9 @@ import Viewinvestor from "./viewinvestor";
 import Pendingcampaign from "./pendingcampaign";
 import Activecampaign from "./activecampaign";
 import Completecampaign from "./completedcampaign";
+import Campaigndetailspage from "./campaigndetailspage";
+// import Blogpagecontent from "../components/images/blogpagecontent";
+import Blogpage from "./blogpage";
 // import Addcreator from "./addcreator";
 
 const Router = () => {
@@ -32,6 +35,8 @@ const Router = () => {
         <Route path={'/pendingcampaign'} element={<Pendingcampaign/>}/>
         <Route path={'/activcampaign'} element={<Activecampaign/>}/>
         <Route path={'/completecampaign'} element={<Completecampaign/>}/>
+        <Route path={'/campaigndetails'} element={<Campaigndetailspage/>}/>
+        <Route path={'/blog'} element={<Blogpage/>}/>
     </Routes>
     </BrowserRouter>
   )

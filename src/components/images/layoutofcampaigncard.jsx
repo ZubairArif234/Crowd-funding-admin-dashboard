@@ -2,11 +2,23 @@
 
 
 import '../../pendingcampaign.css'
+import { useNavigate } from 'react-router-dom';
 
-import { Card , Progress} from 'antd';
+import { Card , Progress} from 'antd'; 
 const { Meta } = Card;
 function Popularcard({ img, heading, price1, price2, detail1, detail2, below1, below2,status , bordertopcolor }) {
-    console.log(img);
+  console.log(img);
+  const navigate =useNavigate()
+
+
+  const state = {
+    image:img,
+    topheading:heading,
+    progressprice1: price1,
+              progressprice2: price2,
+              campaignstatus:status
+
+  }
     return (
       <Card
         hoverable
@@ -50,7 +62,8 @@ function Popularcard({ img, heading, price1, price2, detail1, detail2, below1, b
             </div>
           </div>
           <div>
-            <button className='pendingcampaingcards' >
+            <button className='pendingcampaingcards' onClick={()=>{navigate('/campaigndetails' , { state:state}
+    )}} >
                 View Details
             </button>
           </div>

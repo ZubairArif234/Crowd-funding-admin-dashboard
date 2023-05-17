@@ -18,7 +18,7 @@ const Compcampaignscard = () => {
   return (
     <>
     <p className='addcreatorheading'> Campaigns Management</p>
-    <p className='pendingcampiagnsubtittle'> Pending </p>
+    <p className='pendingcampiagnsubtittle'> Completed </p>
     <div className="popularsuparmaindiv">
 
     {/* <div className="popularmaindiv"> */}

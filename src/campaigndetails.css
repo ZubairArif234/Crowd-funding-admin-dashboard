@@ -1,0 +1,70 @@
+
+.campaigndaetailtagdiv{
+
+    /* background-color: aqua; */
+    display: flex;
+}
+.campaigndetailtags{
+    background-color: gainsboro;
+    margin: 5px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-family: Rubik;
+    font-size: 13px;
+}
+.campaigndetaildatedivone{
+    display: flex;
+    /* background-color: aqua; */
+    /* align-items: center; */
+}
+.campaigndetaildatebox{
+    /* background-color: orange; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+.campaigndetaildateboxdateone1{
+    /* background-color: aqua; */
+    padding: 5px;
+    /* margin: 10px 20px; */
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.campaigndetailaboutmaindiv{
+    /* background-color: aqua; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px 30px;
+}
+.campaigndetailsapprovebtn{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none ;
+    outline: none;
+    background-color: #DEF2F8;
+    color: #03AEF0;
+    font-weight: 500;
+    font-family: Rubik;
+}
+.campaigndetailsnotapprovebtn{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none ;
+    outline: none;
+    background-color: #FEDEE0;
+    color: #FF3D41;
+    font-weight: 500;
+    font-family: Rubik;
+}
+.campaigndetailaboutimgdiv{
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.campaignprofileheading{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Rubik
+    ;
+}

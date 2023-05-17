@@ -1,7 +1,7 @@
 import React from 'react'
 import Smallcard from './dashboardtopsmallcards';
 import Dashboardtotaluser from './dashboardtotaluser';
-import Navbarcrowd from './navbar';
+// import Navbarcrowd from './navbar';
 import graphbluesmall from './graphbluesmall.png';
 import graphgreensmall from './graphgreensmall.png';
 import graphorangesmall from './graphorangesmall.png';

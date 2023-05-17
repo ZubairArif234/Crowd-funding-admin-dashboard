@@ -73,6 +73,7 @@ const Sidemenu = () => {
       theme='dark'
       openKeys={openKeys}
       onOpenChange={onOpenChange}
+      // onClick={}
       style={{
         width: 200,
         backgroundColor:'#140F26'
