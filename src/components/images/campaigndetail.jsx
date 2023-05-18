@@ -36,19 +36,19 @@ const Campaigndetailinnercontent = ( {image , heading , priceone , pricetwo}) =>
            <Row>
             <Col lg={9}>
                 <div className='campaigndetailaboutmaindiv'>
-                  <div style={{display:'flex' , justifyContent:'space-between'}}>
+                  <div style={{display:'flex' , justifyContent:'space-between' , flexWrap:'wrap'}}>
                     <p className='dashboardcardtoponesmalltext'>About Campaign</p>
                     <Dropdown>
-      <Dropdown.Toggle  id="dropdown-basic" style={{padding:'3px 30px', backgroundColor:'#6100B3'  ,border:'1px solid #6100B3'}}>
+      <Dropdown.Toggle  id="dropdown-basic" className='catagoriesdetailbtndropdown' >
         Catagories
       </Dropdown.Toggle>
 
       <Dropdown.Menu style={{borderBottom:'6px solid #6100B3'}}>
-        <Dropdown.Item href="#/action-1">Pop</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Rock </Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Blues </Dropdown.Item>
-        <Dropdown.Item href="#/action-3"> Hip Hop</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Classical </Dropdown.Item>
+        <Dropdown.Item >Pop</Dropdown.Item>
+        <Dropdown.Item >Rock </Dropdown.Item>
+        <Dropdown.Item >Blues </Dropdown.Item>
+        <Dropdown.Item > Hip Hop</Dropdown.Item>
+        <Dropdown.Item >Classical </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
                   </div>

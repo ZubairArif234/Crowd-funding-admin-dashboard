@@ -2,9 +2,9 @@ import React from 'react'
 import {
     Row, Col
 } from 'react-bootstrap'
-import { UploadOutlined } from '@ant-design/icons';
+// import { UploadOutlined } from '@ant-design/icons';
 import { Upload, Popover,message } from 'antd';
-import ImgCrop from 'antd-img-crop';
+// import ImgCrop from 'antd-img-crop';
 import { useState } from 'react';
 
 
@@ -22,36 +22,37 @@ const content = (
 
 
 const Blogpagecontent = () => {
-    const [fileList, setFileList] = useState([
+    const [fileList, setFileList] = useState([]);
 
-    ]);
+  const beforeUpload = (file) => {
+    // const maxSize = 100 * 1024; // 100 KB
+    // if (file.size > maxSize) {
+    //   message.error('Image must be smaller than 100 KB');
+    //   return false; // Prevent upload
+    // }
+    return false; // Proceed with upload
+  };
 
-    const beforeUpload = (file) => {
-        const maxSize = 100 * 1524; // 100 KB
-        if (file.size > maxSize) {
-          message.error('Image must be smaller than 100 KB');
-          return false; // Prevent upload
-        }
-        return true; // Proceed with upload
-      };
-    console.log(fileList);
-    const onChange = ({ fileList: newFileList }) => {
-        setFileList(newFileList);
-    };
-    const onPreview = async (file) => {
-        let src = file.url;
-        if (!src) {
-            src = await new Promise((resolve) => {
-                const reader = new FileReader();
-                reader.readAsDataURL(file.originFileObj);
-                reader.onload = () => resolve(reader.result);
-            });
-        }
-        const image = new Image();
-        image.src = src;
-        const imgWindow = window.open(src);
-        imgWindow?.document.write(image.outerHTML);
-    };
+  console.log(fileList);
+
+  const onChange = ({ fileList: newFileList }) => {
+    setFileList(newFileList);
+  };
+
+  const onPreview = async (file) => {
+    let src = file.url;
+    if (!src) {
+      src = await new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file.originFileObj);
+        reader.onload = () => resolve(reader.result);
+      });
+    }
+    const image = new Image();
+    image.src = src;
+    const imgWindow = window.open(src);
+    imgWindow?.document.write(image.outerHTML);
+  };
     return (
         <div>
 
@@ -83,9 +84,9 @@ const Blogpagecontent = () => {
                         </Popover>
                         {/* </div> */}
                         <br />
-                        <ImgCrop rotationSlider>
+                        {/* <ImgCrop rotationSlider> */}
                             <Upload
-                                action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                              
                                 listType="picture-card"
                                 fileList={fileList}
                                 onChange={onChange}
@@ -94,7 +95,7 @@ const Blogpagecontent = () => {
                             >
                                 {fileList.length < 5 && '+ Upload'}
                             </Upload>
-                        </ImgCrop>
+                        {/* </ImgCrop> */}
                         <br />
                         {/* <br/>
                 <label className='addcreatorlabel'>Confirm Password</label>
@@ -108,6 +109,17 @@ const Blogpagecontent = () => {
                     </Col>
 
                     <Col lg={6}>
+                        <label className='addcreatorlabel'>Blog Catagories</label>
+                        <br />
+                       <select className='addcreatorinput'>
+                        <option>Select Catagories</option>
+                        <option>Pop</option>
+                        <option>Hip Hop</option>
+                        <option>Jazz</option>
+                        <option>Blues</option>
+                        <option>Classicals</option>
+                       </select>
+                        <br />
                         <label className='addcreatorlabel'>SEO Title</label>
                         <br />
                         <input className='addcreatorinput' type='text' placeholder='Enter SEO Title' />

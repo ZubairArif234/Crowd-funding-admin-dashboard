@@ -20,6 +20,7 @@
 .campaigndetaildatebox{
     /* background-color: orange; */
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-around; */
 }
 .campaigndetaildateboxdateone1{
@@ -67,4 +68,47 @@
     font-size: 18px;
     font-family: Rubik
     ;
+}
+.catagoriesdetailbtndropdown{
+    padding:3px 30px;
+     background-color:#6100B3  ;
+     border:1px solid #6100B3 ;
+     width:100%;
+    }
+    
+    .btn.show ,.btn:first-child{
+    border:1px solid #6100B3 ;
+    background-color: #6100B3;
+}
+    .btn.show ,.btn:first-child:active{
+    border:1px solid #6100B3 ;
+    background-color: #6100B3;
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    
+    .campaigndetailaboutmaindiv{
+        /* background-color: aqua; */
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 10px;
+}
+.catagoriesdetailbtndropdown{
+    padding:3px 10px;
+     background-color:#6100B3  ;
+     border:1px solid #6100B3 ;
+      width:100%;
+      margin-bottom: 5px;
+}
+.campaigndetaildatebox{
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 }

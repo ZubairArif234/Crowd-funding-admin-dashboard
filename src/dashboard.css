@@ -147,8 +147,36 @@ line{
     justify-content:'center' ;
       background-color: #6100B3;
 } */
+.accordion-button{
+    font-family: Rubik;
+    padding: 8px 5px !important;
+font-size: 13px !important;
+}
+/* .accordianlinkssvgs{
+    margin-right: 10px;
+} */
+.accordianlinkstop{
 
-
+    padding: 5px;
+    font-size: 13px !important;
+    font-family: Rubik;
+    /* margin: 5px; */
+    /* background-color: orangered; */
+    color: #5B5B5B;
+    text-decoration: none;
+}
+.accordianlinks{
+    padding: 5px;
+    font-size: 13px !important;
+    font-family: Rubik;
+    margin: 5px;
+    /* background-color: orangered; */
+    color: #5B5B5B;
+    text-decoration: none;
+}
+.acccordiannavigation{
+    /* background-color: aqua; */
+}
 .draweradmin{
     position: absolute;
 }
