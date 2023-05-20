@@ -10,11 +10,13 @@ import graphyellowsmall from './graphyellowsmall.png';
 import Campaigndetailcards from './campaigndetailcards';
 import { Divider } from 'antd';
 import '../../campaigndetails.css'
-
+import { useNavigate } from 'react-router-dom';
 const Campaigndetailinnercontent = ( {image , heading , priceone , pricetwo}) => {
+  const navigate =useNavigate()
   return (
     <div>
         <p className='addcreatorheading' style={{marginLeft:'0px'}}> Campaign Detail</p>
+        <p className='gobacklinkcamapign' onClick={() => window.history.back()} >Go back</p>
         <Row >
             <Col sm={12} md={6} lg={3}>
                <Campaigndetailcards bordercolour='3px solid darkgreen' graphimg={graphgreensmall} />

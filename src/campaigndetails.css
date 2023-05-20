@@ -84,7 +84,16 @@
     border:1px solid #6100B3 ;
     background-color: #6100B3;
 }
-
+.gobacklinkcamapign{
+    font-weight: 500;
+    font-family: Rubik;
+    line-height: 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.gobacklinkcamapign:hover{
+    text-decoration: underline;
+}
 
 
 

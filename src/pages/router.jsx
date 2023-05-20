@@ -19,8 +19,11 @@ import Pendingcampaign from "./pendingcampaign";
 import Activecampaign from "./activecampaign";
 import Completecampaign from "./completedcampaign";
 import Campaigndetailspage from "./campaigndetailspage";
+import Blogfullcontentpage from "./blogfullcontentpage";
 // import Blogpagecontent from "../components/images/blogpagecontent";
 import Blogpage from "./blogpage";
+import Viewblogs from "./viewblog";
+import Platformsetting from "./platformsetting";
 // import Addcreator from "./addcreator";
 
 const Router = () => {
@@ -37,6 +40,9 @@ const Router = () => {
         <Route path={'/completecampaign'} element={<Completecampaign/>}/>
         <Route path={'/campaigndetails'} element={<Campaigndetailspage/>}/>
         <Route path={'/blog'} element={<Blogpage/>}/>
+        <Route path={'/viewblogs'} element={<Viewblogs/>}/>
+        <Route path={'/blogdetails'} element={<Blogfullcontentpage/>}/>
+        <Route path={'/platformsetting'} element={<Platformsetting/>}/>
     </Routes>
     </BrowserRouter>
   )

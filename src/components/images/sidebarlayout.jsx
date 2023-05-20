@@ -753,7 +753,7 @@ const handleShow = () => setShow(true);
         <Accordion.Body>
           <Link className='accordianlinks' to={'/blog'}>Add New Blogs</Link>
           <br/>
-          <Link className='accordianlinks' to={'/activcampaign'}>View Blogs </Link>
+          <Link className='accordianlinks' to={'/viewblogs'}>View Blogs </Link>
           {/* <Link to={'/completecampaign'}>Financial Reports</Link> */}
         
         </Accordion.Body>
@@ -766,7 +766,7 @@ const handleShow = () => setShow(true);
             Settings
             </Accordion.Header>
         <Accordion.Body>
-          <Link className='accordianlinks' to={'/blog'}>Platform Settings  </Link>
+          <Link className='accordianlinks' to={'/platformsetting'}>Platform Settings  </Link>
           <br/>
           <Link className='accordianlinks' to={'/activcampaign'}>API Integrations  </Link>
           {/* <Link to={'/completecampaign'}>Financial Reports</Link> */}
