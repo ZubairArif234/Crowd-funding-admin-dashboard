@@ -652,7 +652,7 @@ const handleShow = () => setShow(true);
            <br/>
            <Link className='accordianlinks' to={'/viewcreator'}>View/Edit Creator</Link>
            <br/>
-          <Link className='accordianlinks' to={'/creatoranalytic'}>Creator Analytics</Link>
+          <Link className='accordianlinks' to={'/creatoranalytics'}>Creator Analytics</Link>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
@@ -669,7 +669,7 @@ const handleShow = () => setShow(true);
            <br/>
           <Link className='accordianlinks' to={'/viewinvestor'}>View/Edit Investor</Link>
            <br/>
-          <Link className='accordianlinks' to={'/investoranalytic'}>Investor Analytics</Link>
+          <Link className='accordianlinks' to={'/investoranalytics'}>Investor Analytics</Link>
         
         </Accordion.Body>
       </Accordion.Item>
@@ -699,9 +699,9 @@ const handleShow = () => setShow(true);
             Transaction Management
             </Accordion.Header>
         <Accordion.Body>
-          <Link className='accordianlinks' to={'/pendingcampaign'}>Completed Transaction </Link>
+          <Link className='accordianlinks' to={'/completetransaction'}>Completed Transaction </Link>
            <br/>
-          <Link className='accordianlinks' to={'/activcampaign'}>Pending Transaction </Link>
+          <Link className='accordianlinks' to={'/pendingtransaction'}>Pending Transaction </Link>
            <br/>
           <Link className='accordianlinks' to={'/completecampaign'}>Dispute</Link>
         
@@ -714,9 +714,9 @@ const handleShow = () => setShow(true);
             Report & Analytics
             </Accordion.Header>
         <Accordion.Body>
-          <Link className='accordianlinks' to={'/pendingcampaign'}>User Statistics  </Link>
+          <Link className='accordianlinks' to={'/userstatistics'}>User Statistics  </Link>
            <br/>
-          <Link className='accordianlinks' to={'/activcampaign'}>Campaign Statistics </Link>
+          <Link className='accordianlinks' to={'/campaignstatistics'}>Campaign Statistics </Link>
            <br/>
           <Link className='accordianlinks' to={'/completecampaign'}>Financial Reports</Link>
         
@@ -735,7 +735,7 @@ const handleShow = () => setShow(true);
             Content Management
             </Accordion.Header>
         <Accordion.Body>
-          <Link className='accordianlinks' to={'/pendingcampaign'}>All Front End Pages List </Link>
+          <Link className='accordianlinks' to={'/allfrontpagelist'}>All Front End Pages List </Link>
           {/* <Link to={'//activcampaign'}>Campaign Statistics </Link>
           <Link to={'/completecampaign'}>Financial Reports</Link> */}
         
@@ -768,7 +768,7 @@ const handleShow = () => setShow(true);
         <Accordion.Body>
           <Link className='accordianlinks' to={'/platformsetting'}>Platform Settings  </Link>
           <br/>
-          <Link className='accordianlinks' to={'/activcampaign'}>API Integrations  </Link>
+          <Link className='accordianlinks' to={'/apisettings'}>API Integrations  </Link>
           {/* <Link to={'/completecampaign'}>Financial Reports</Link> */}
         
         </Accordion.Body>

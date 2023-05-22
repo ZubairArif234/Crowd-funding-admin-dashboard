@@ -25,11 +25,7 @@ const Blogpagecontent = () => {
     const [fileList, setFileList] = useState([]);
 
   const beforeUpload = (file) => {
-    // const maxSize = 100 * 1024; // 100 KB
-    // if (file.size > maxSize) {
-    //   message.error('Image must be smaller than 100 KB');
-    //   return false; // Prevent upload
-    // }
+ 
     return false; // Proceed with upload
   };
 

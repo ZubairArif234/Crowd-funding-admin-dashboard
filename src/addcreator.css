@@ -64,7 +64,10 @@
 }
 
 
-
+.ant-table-content{
+    overflow-x: auto;
+    max-height: 495px;
+}
 
 
 

@@ -2,6 +2,83 @@
 
 
 .platformdetails{
-    background-color: yellow;
+    background-color:rgb(247, 246, 246);
   margin: 0px 50px;
+  padding: 23px 50px;
+  border-radius: 5px;
 }
+
+
+.settingsvalueicoandtext{
+  margin-left: 10px;
+}
+
+.settingsvaluetext{
+  /* background-color: orangered; */
+  padding: 5px;
+  margin: 0px 0px;
+  /* width: 400px; */
+  color: gray;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.settingsvaluetextlinks{
+  margin-bottom: 10px;
+  color: gray;
+  text-decoration: none;
+  
+}
+
+.platformfieldskeys{
+  font-family: Rubik;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.editsettingsfieldstextarea{
+
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  outline: none;
+  /* border: 1px solid #6100B3; */
+  border: 1px solid gray;
+}
+
+.editplatformsettingsbtn{
+  width: 100%;
+  padding: 5px;
+  background-color: #6100B3;
+  border:none;
+  outline: none;
+border-radius: 5px;
+color: white;
+font-family: Rubik;
+letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+  .platformdetails{
+    background-color:rgb(240, 235, 235);
+  margin: 0px 0px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+}
+
+
+
+
+

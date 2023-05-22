@@ -35,14 +35,14 @@ const initialValues = {
 const Addinvestorpagecontent = () => {
 
 
-  const {values , errors , handleBlur , handleChange , handleSubmit} = useFormik({
-    initialValues:initialValues,
-    validationSchema:addinvestorschemas,
-    onSubmit:(values)=>{
-console.log(values);
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit, resetForm } = useFormik({
+    initialValues: initialValues,
+    validationSchema: addinvestorschemas,
+    onSubmit: (values, { resetForm }) => {
+      console.log(values);
+      resetForm(); // Reset the form values
     },
-
-  })
+  });
   console.log(Formik)
 
 
@@ -58,37 +58,37 @@ console.log(values);
 <label className='addcreatorlabel' htmlFor='first_name'>First Name</label>
 <br/>
 <input className='addcreatorinput'  onChange={handleChange} onBlur={handleBlur} value={values.first_name} name='first_name' id='first_name' type='text' placeholder='Enter First Name'/>
-{errors.first_name ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.first_name}</span> : null}
+{errors.first_name && touched.first_name ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.first_name}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='middle_name'>Middle Name</label>
 <br/>
 <input className='addcreatorinput'  onChange={handleChange} onBlur={handleBlur} value={values.middle_name} name='middle_name' id='middle_name' type='text' placeholder='Enter Middle Name'/>
-{errors.middle_name ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.middle_name}</span> : null}
+{errors.middle_name && touched.middle_name ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.middle_name}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='last_name'>Last Name</label>
 <br/>
 <input className='addcreatorinput' onChange={handleChange} onBlur={handleBlur} value={values.last_name} name='last_name' id='last_name' type='text' placeholder='Enter Last Name'/>
-{errors.last_name ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.last_name}</span> : null}
+{errors.last_name && touched.last_name ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.last_name}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='tittle'>Tittle</label>
 <br/>
 <input className='addcreatorinput' onChange={handleChange} onBlur={handleBlur} value={values.tittle} name='tittle' id='tittle' type='text' placeholder='Enter Tittle'/>
-{errors.tittle ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.tittle}</span> : null}
+{errors.tittle  && touched.tittle ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.tittle}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='email'>Email</label>
 <br/>
 <input className='addcreatorinput'  onChange={handleChange} onBlur={handleBlur} value={values.email} name='email' id='email' type='email' placeholder='Enter Email'/>
-{errors.email ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.email}</span> : null}
+{errors.email && touched.email ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.email}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='password'>Password</label>
 <br/>
 <input className='addcreatorinput' onChange={handleChange} onBlur={handleBlur} value={values.password} name='password' id='password' type='password' placeholder='Enter Password'/>
-{errors.password ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.password}</span> : null}
+{errors.password && touched.password ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.password}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='confirm_password'>Confirm Password</label>
 <br/>
 <input className='addcreatorinput' onChange={handleChange} onBlur={handleBlur} value={values.confirm_password} name='confirm_password' id='confirm_password' type='password' placeholder='Confirm Password'/>
-{errors.confirm_password ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.confirm_password}</span> : null}
+{errors.confirm_password && touched.confirm_password ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.confirm_password}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='country'>Country of Residence</label>
 <br/>
@@ -100,12 +100,12 @@ console.log(values);
                   )
                 })}
             </select>
-                {errors.country ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.country}</span> : null}
+                {errors.country && touched.country ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.country}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='state'>State/Province/Region </label>
 <br/>
 <input className='addcreatorinput'  onChange={handleChange} onBlur={handleBlur} value={values.state} name='state' id='state' type='text' placeholder='State/Province/Region '/>
-{errors.state ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.state}</span> : null}
+{errors.state && touched.state ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.state}</span> : null}
 {/* <br/>
                 <label className='addcreatorlabel'>City </label>
 <br/>
@@ -118,17 +118,17 @@ console.log(values);
                 <label className='addcreatorlabel' htmlFor='zip_code'>Postal/ZIP code</label>
 <br/>
 <input className='addcreatorinput' onChange={handleChange} onBlur={handleBlur} value={values.zip_code} name='zip_code' id='zip_code' type='text' placeholder='Postal/ZIP code'/>
-{errors.zip_code ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.zip_code}</span> : null}
+{errors.zip_code && touched.zip_code ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.zip_code}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='city'>City</label>
                 <br/>
                 <input className='addcreatorinput' onChange={handleChange} onBlur={handleBlur} value={values.city} name='city' id='city' type='text' placeholder='Enter City'/>
-                {errors.city ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.city}</span> : null}
+                {errors.city && touched.city ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.city}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='phone_no'>Phone no</label>
 <br/>
 <input className='addcreatorinput' onChange={handleChange} onBlur={handleBlur} value={values.phone_no} name='phone_no' id='phone_no' type='number' placeholder='Enter Phone no'/>
-{errors.phone_no ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.phone_no}</span> : null}
+{errors.phone_no && touched.phone_no ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.phone_no}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='language'>Language Preferred </label>
 <br/>
@@ -139,18 +139,18 @@ console.log(values);
   <option>French</option>
   <option>Spanish</option>
 </select>
-{errors.language ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.language}</span> : null}
+{errors.language && touched.language ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.language}</span> : null}
 <br/>
 
                 <label className='addcreatorlabel' htmlFor='birthdate'>Date of birth</label>
 <br/>
 <input className='addcreatorinput'  value={values.birthdate} onChange={handleChange} onBlur={handleBlur} name='birthdate' id='birthdate' type='date' placeholder='Enter Phone no'/>
-{errors.birthdate ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.birthdate}</span> : null}
+{errors.birthdate && touched.birthdate ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.birthdate}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='occupation'>Occupation</label>
                 <br/>
 <input className='addcreatorinput' value={values.occupation} onChange={handleChange} onBlur={handleBlur} name='occupation' id='occupation' type='text' placeholder='Occupation'/>
-{errors.occupation ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.occupation}</span> : null}
+{errors.occupation && touched.occupation ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.occupation}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='experience'>Investment Experience</label>
 <br/>
@@ -163,7 +163,7 @@ console.log(values);
   <option> Expert</option>
   {/* <option>Jazz</option> */}
 </select>
-{errors.experience ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.experience}</span> : null}
+{errors.experience && touched.experience ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.experience}</span> : null}
 <br />
 
                 <label className='addcreatorlabel' htmlFor='music'>Music Genre's</label>
@@ -177,12 +177,12 @@ console.log(values);
   <option>Blues</option>
   <option>Jazz</option>
 </select>
-{errors.music ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.music}</span> : null}
+{errors.music && touched.music ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.music}</span> : null}
 <br/>
                 <label className='addcreatorlabel' htmlFor='knowabout'>How did you here about us ?</label>
                 <br/>
 <input className='addcreatorinput' onChange={handleChange} onBlur={handleBlur} value={values.knowabout} name='knowabout' id='knowabout' type='text' placeholder='Occupation'/>
-{errors.knowabout ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.knowabout}</span> : null}
+{errors.knowabout && touched.knowabout ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.knowabout}</span> : null}
 <br />
                
                
@@ -192,19 +192,19 @@ console.log(values);
                 <label className='addcreatorlabel' htmlFor='address'>Street Address</label>
                 <br/>
                 <textarea className='addcreatortextarea' onChange={handleChange} onBlur={handleBlur} value={values.address} name='address' id='address' placeholder='Street Address...' cols={20} rows={4}></textarea>
-{errors.address ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.address}</span> : null}
+{errors.address && touched.address ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.address}</span> : null}
                 <div>
 <input type='checkbox' id='private_policy' onChange={handleChange} onBlur={handleBlur} value={values.private_policy} name='private_policy' style={{marginRight:'10px'}}/>
 
 <label style={{fontFamily:'Rubik' }} htmlFor='private_policy'>Accept Terms and conditions</label>
 <br/>
-{errors.private_policy ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.private_policy}</span> : null}
+{errors.private_policy && touched.private_policy ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.private_policy}</span> : null}
 <br />
 <input type='checkbox'onChange={handleChange} onBlur={handleBlur} value={values.terms_conditions} name='terms_conditions' style={{marginRight:'10px'}}/>
 
 <label style={{fontFamily:'Rubik' }} htmlFor='terms_conditions'>Agree to the Privacy Policy</label>
 <br />
-{errors.terms_conditions ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.terms_conditions}</span> : null}
+{errors.terms_conditions && touched.terms_conditions ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.terms_conditions}</span> : null}
 </div>
            <button className='addcreatorsubmitbtn'>Submit</button>
             </Row>
