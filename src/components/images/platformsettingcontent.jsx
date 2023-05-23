@@ -95,61 +95,70 @@ const Platformsettingcontent = () => {
                         <br />
                         <label className='platformfieldskeys'>Website Name  </label>
                         {/* <br/> */}
-                        <p className='settingsvaluetext'>Crowd funding </p>
+                        <input className='addcreatorinput' value={'Crowd funding'} readOnly/>
                         <br />
 
                         {/* </div> */}
                         {/* <div style={{display:'flex' , alignItems:'center'}}> */}
                         <label className='platformfieldskeys'>Website Description  </label>
                         {/* <br/> */}
-                        <p className='settingsvaluetext'>Crowdfunding is the practice of funding a project or venture by raising money from a large number of people, typically via the internet. Crowdfunding is a form of crowdsourcing and alternative finance. </p>
+                        <input className='addcreatorinput' value={'Crowdfunding is the practice of funding a project or venture by raising money from a large'} readOnly/>
+                        {/* <p className='settingsvaluetext'>Crowdfunding is the practice of funding a project or venture by raising money from a large number of people, typically via the internet. Crowdfunding is a form of crowdsourcing and alternative finance. </p> */}
                         <br />
                         <label className='platformfieldskeys'>Facebook Link</label>
-                        <p className='settingsvaluetext'>
+                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
+                        {/* <p className='settingsvaluetext'>
 
                             <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
-                        </p>
+                        </p> */}
                         {/* <br/> */}
                         <label className='platformfieldskeys'>Instagram Link</label>
-                        <p className='settingsvaluetext'>
+                        {/* <p className='settingsvaluetext'>
 
                             <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
-                        </p>
+                        </p> */}
+                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
                         <label className='platformfieldskeys'>Twitter Link</label>
-                        <p className='settingsvaluetext'>
+                        {/* <p className='settingsvaluetext'> */}
 
-                            <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
-                        </p>
+                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
+                            {/* <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a> */}
+                        {/* </p> */}
 
 
                         {/* </div> */}
                     </Col>
                     <Col lg={6}>
                         <label className='platformfieldskeys'>SEO Tittle</label>
-                        <p className='settingsvaluetext'>
+                        {/* <p className='settingsvaluetext'>
                             Zubair arif
-                            {/* <a href='https://www.facebook.com/'>https://www.facebook.com/</a> */}
-                        </p>
+                            <a href='https://www.facebook.com/'>https://www.facebook.com/</a>
+                        </p> */}
+                        <input className='addcreatorinput' value={' Zubair arif'} readOnly/>
                         <label className='platformfieldskeys'>SEO Description</label>
-                        <p className='settingsvaluetext'>
+                        {/* <p className='settingsvaluetext'>
                             A passionate developer and Crowdfunding is the practice of funding a project or venture by raising money from a large number of people, typically via the internet. Crowdfunding is a form of crowdsourcing and alternative finance.
-                            {/* <a href='https://www.facebook.com/'>https://www.facebook.com/</a> */}
-                        </p>
+                            <a href='https://www.facebook.com/'>https://www.facebook.com/</a>
+                        </p> */}
+                        <input className='addcreatorinput' value={' A passionate developer and Crowdfunding is the practice of funding a project or venture by raising money '} readOnly/>
                         <label className='platformfieldskeys'>SEO Keyword</label>
-                        <p className='settingsvaluetext'>
+                        {/* <p className='settingsvaluetext'>
                             React , Javascript , Passionate
 
-                        </p>
+                        </p> */}
+                        <input className='addcreatorinput' value={' React , Javascript , Passionate'} readOnly/>
                         <label className='platformfieldskeys'>Private policy URL</label>
-                        <p className='settingsvaluetext'>
+                        {/* <p className='settingsvaluetext'>
 
                             <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
-                        </p>
+                        </p> */}
+                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
                         <label className='platformfieldskeys'>Terms and Condition URL</label>
-                        <p className='settingsvaluetext'>
+                        {/* <p className='settingsvaluetext'>
 
                             <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
-                        </p>
+                        </p> */}
+                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
 
                     </Col>
                 </Row>

@@ -31,12 +31,14 @@ import Editallfrontpagescontentlist from "./editcontentofallfrontpages";
 // import Userstatistics from "./userstatistics";
 import Userstatisticspage from "./userstatistics";
 import Campagianstatisticspage from "./campagianstatisticspage";
+import Financialreportspage from "./financialreports";
 // import Editallfrontpagescontent from "../components/images/editallfrontpagescontent";
 // import Blogpagecontent from "../components/images/blogpagecontent";
 import Blogpage from "./blogpage";
 import Apisettingpage from "./apisettingpage";
 import Viewblogs from "./viewblog";
 import Platformsetting from "./platformsetting";
+import Transactiondisputepage from "./transactiondisputepage";
 // import Addcreator from "./addcreator";
 
 const Router = () => {
@@ -56,10 +58,12 @@ const Router = () => {
         <Route path={'/campaigndetails'} element={<Campaigndetailspage/>}/>
         <Route path={'/completetransaction'} element={<Completetransactionpage/>}/>
         <Route path={'/pendingtransaction'} element={<Pendingtransactionpage/>}/>
+        <Route path={'/transactiondispute'} element={<Transactiondisputepage/>}/>
         <Route path={'/blog'} element={<Blogpage/>}/>
         <Route path={'/viewblogs'} element={<Viewblogs/>}/>
         <Route path={'/blogdetails'} element={<Blogfullcontentpage/>}/>
         <Route path={'/userstatistics'} element={<Userstatisticspage/>}/>
+        <Route path={'/financialreports'} element={<Financialreportspage/>}/>
         <Route path={'/campaignstatistics'} element={<Campagianstatisticspage/>}/>
         <Route path={'/allfrontpagelist'} element={<Allfrontpageslistpage/>}/>
         <Route path={'/editallfrontpagescontent'} element={<Editallfrontpagescontentlist/>}/>

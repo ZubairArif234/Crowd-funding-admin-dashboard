@@ -6,9 +6,6 @@
 
 
 
-
-
-
 import { Form, InputNumber, Popconfirm, Table, Typography,Input } from 'antd';
 import { useState } from 'react';
 
@@ -25,8 +22,8 @@ for (let i = 0; i < 100; i++) {
     age: 32,
     phone: `12345${i}878${i}`,
     gender:'male',
-    country:`${i}`,
-    Status:`active${i}`,
+    country:`pakistan${i}`,
+    catagories:`Creator${i}`
 
   });
 }
@@ -64,7 +61,7 @@ const EditableCell = ({
     </td>
   );
 };
-const Campagianstatistics = () => {
+const Financialreports = () => {
   const [form] = Form.useForm();
   const [data, setData] = useState(originData);
   const [editingKey, setEditingKey] = useState('');
@@ -118,45 +115,42 @@ const Campagianstatistics = () => {
     //   editable: true,
     // },
     {
-      title: 'Campaign Tittle',
+      title: 'Full name',
       dataIndex: 'name',
       width: '15%',
       editable: true,
     },
     {
-      title: 'Creator Name',
+      title: 'Email',
       dataIndex: 'email',
       width: '20%',
       editable: true,
     },
     {
-      title: 'Start Date',
+      title: 'Campaign Title',
       dataIndex: 'age',
-      width: '10%',
-      editable: true,
-    },
-    {
-      title: 'End Date',
-      dataIndex: 'phone',
       width: '15%',
       editable: true,
     },
     {
       title: 'Fund Raise',
+      dataIndex: 'phone',
+      width: '15%',
+      editable: true,
+    },
+    {
+      title: 'Fund Used',
       dataIndex: 'gender',
       width: '10%',
       editable: true,
     },
     {
-      title: 'No of Investors',
+      title: 'Funding Goals',
       dataIndex: 'country',
       width: '15%',
       editable: true,
     },
-    {
-      title: 'Status',
-      dataIndex: 'Status',
-    },
+   
   ];
   const mergedColumns = columns.map((col) => {
     if (!col.editable) {
@@ -176,7 +170,7 @@ const Campagianstatistics = () => {
   return (
 
     <Form form={form} component={false}>
-        <p className='addcreatorheading'>Camapign Analytics</p>
+        <p className='addcreatorheading'>Financial Reports</p>
       <Table
        scroll={{
         x: 'auto',
@@ -198,4 +192,4 @@ const Campagianstatistics = () => {
     </Form>
   );
 };
-export default Campagianstatistics;
+export default Financialreports;

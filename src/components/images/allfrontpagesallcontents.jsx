@@ -8,6 +8,8 @@ import React from 'react'
 import { useState } from "react";
 import populararr from '../../pages/data';
 import Allfrontpagescard from './allfrontpagescard';
+import  allfrontpagecardsdata  from '../../content';
+
 // import Popularcard from './layoutofcampaigncard';
 
 const Allfrontpagesallcontent = () => {
@@ -23,14 +25,21 @@ const Allfrontpagesallcontent = () => {
 
     {/* <div className="popularmaindiv"> */}
         
-    <div className="popularcarddiv">
-        <Allfrontpagescard heading={'Home'} />
-        <Allfrontpagescard heading={'About'} />
-        <Allfrontpagescard heading={'Ongoing Project'} />
-        <Allfrontpagescard heading={'Detail Project'} />
-        <Allfrontpagescard heading={'Completed Project'} />
-        <Allfrontpagescard heading={'Blog'} />
-        <Allfrontpagescard heading={'Contact'} />
+    <div className="popularcarddiv" style={{justifyContent:'flex-start'}}>
+
+
+      {allfrontpagecardsdata.map(( values )=>{
+        return(
+
+          <Allfrontpagescard key={values.id} heading={values.pagename} description={values.pagedescription} img={values.pagethumbnailimg}/>
+        )
+      })}
+        {/* <Allfrontpagescard heading={'About'} img={aboutusthumbnail}/>
+        <Allfrontpagescard heading={'Ongoing Project'} img={ongoingthumbnail}/>
+        <Allfrontpagescard heading={'Detail Project'}  img={projectdetailthumbnail}/>
+        <Allfrontpagescard heading={'Completed Project'} img={completeprojectthumbnail}/>
+        <Allfrontpagescard heading={'Blog'} img={blogthumbnail}/>
+        <Allfrontpagescard heading={'Contact'} img={cotactusthumbnail}/> */}
         {/* <Allfrontpagescard heading={'Home'} /> */}
         
         {/* {

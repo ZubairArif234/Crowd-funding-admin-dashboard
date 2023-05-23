@@ -3,6 +3,7 @@
 
 import { Divider } from 'antd'
 import '../../dashboard.css'
+import { Link } from 'react-router-dom'
 const Dashboardtotaluser = () => {
  return(
     <div className='dashboardtotalusermaindiv'>
@@ -26,7 +27,7 @@ const Dashboardtotaluser = () => {
     </div>
     {/* <Divider/> */}
     <div style={{display:'flex' , justifyContent:'flex-end'}}>
-        <p style={{color:'#140F26',fontSize:'12px',cursor:'pointer'}}>View All</p>
+        <Link to={'/userstatistics'} style={{color:'#140F26',fontSize:'12px',cursor:'pointer',textDecoration:'none'}}>View All</Link>
     </div>
 
     </div>
