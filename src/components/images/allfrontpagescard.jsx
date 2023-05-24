@@ -19,7 +19,7 @@ function Allfrontpagescard({heading, description , img , id }) {
   const [modalShow, setModalShow] = React.useState(false);
   const [pageName, setPageName] = useState(heading);
   const [pageDescription, setPageDescription] = useState(description);
-  // console.log(img);
+  console.log(pageName,pageDescription);
   const navigate =useNavigate()
 
 
@@ -34,13 +34,18 @@ function Allfrontpagescard({heading, description , img , id }) {
     //     obj.description =pageDescription
     //   }
     // })
-    allfrontpagecardsdata.find((obj)=>{
-      if(obj.id == id){
-        obj.pagename=pageName
-        obj.description=pageDescription
+    // const idkey = allfrontpagecardsdata.find((obj)=>
+    const idkey = allfrontpagecardsdata.find((obj) => {
+      if (obj.id == id) {
+        obj.pagename = pageName;
+        obj.description = pageDescription;
+        return true; // Return true to stop further iteration after finding the matching object
       }
-    })
-    console.log('Page Name:', pageName);
+    });
+    
+    console.log(allfrontpagecardsdata);
+    console.log(idkey);
+    console.log('Page Name:', id);
     console.log('Page Description:', pageDescription);
     // Perform any necessary updates or API calls here
 
