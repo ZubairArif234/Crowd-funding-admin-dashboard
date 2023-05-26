@@ -10,6 +10,7 @@ import graphyellowsmall from './graphyellowsmall.png';
 import Campaigndetailcards from './campaigndetailcards';
 import { Divider } from 'antd';
 import '../../campaigndetails.css'
+
 import { useNavigate } from 'react-router-dom';
 const Campaigndetailinnercontent = ( {image , heading , priceone , pricetwo}) => {
   const navigate =useNavigate()

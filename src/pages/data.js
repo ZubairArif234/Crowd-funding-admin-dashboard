@@ -11,7 +11,7 @@ import popsong3 from '../components/images/popsong3.png'
 const populararr =[
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Zubair is best',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -22,7 +22,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'He is doing very well',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -33,7 +33,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Well done such a amazimg developer ',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -44,7 +44,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -55,7 +55,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -66,7 +66,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -77,7 +77,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -88,7 +88,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -99,7 +99,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -110,7 +110,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -121,7 +121,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',
@@ -132,7 +132,7 @@ const populararr =[
     },
     {
         image:popsong3,
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         price1:'$32,678',
         price2:'$33,467',
         detail1:'Pledged',

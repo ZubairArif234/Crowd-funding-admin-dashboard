@@ -77,11 +77,14 @@
   .popularcarddiv {
     display: flex;
     /* background-color: #6100B3; */
-    margin-top: 50px;
+    margin-top: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 20px;
   
+  }
+.ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button {
+    background-color: #6100B3;
   }
   .popmoreproj {
     font-family: Rubik;

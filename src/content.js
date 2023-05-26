@@ -13,6 +13,10 @@ const allfrontpagecardsdata = [
     pagedescription:
       "BACKED projects — big and small — have come to life with the support of the BACKED community.",
     pagethumbnailimg: homethumbnail,
+    seotitle:'Mastering the Art of Crowdfunding: A Comprehensive Guide to Fund Your Dreams',
+    seodescription:"Harness the power of the crowd and unleash your project's success through crowdfunding. Our easy-to-follow guide offers practical tips, tactics, and secrets that will empower you to run a compelling campaign, build momentum, and secure the funds you need.",
+    seokeywords:"Crowdfunding,Fundraising,Campaign,Backers,Donor ",
+    seotagline:'Empowering Dreams, One Backer at a Time'
   },
   {
     id: "02",
@@ -20,6 +24,10 @@ const allfrontpagecardsdata = [
     pagedescription:
       "BACKED projects — big and small — have come to life with the support of the BACKED community.",
     pagethumbnailimg: aboutusthumbnail,
+    seotitle:'Mastering the Art of Crowdfunding: A Comprehensive Guide to Fund Your Dreams',
+    seodescription:"Harness the power of the crowd and unleash your project's success through crowdfunding. Our easy-to-follow guide offers practical tips, tactics, and secrets that will empower you to run a compelling campaign, build momentum, and secure the funds you need.",
+    seokeywords:"Crowdfunding,Fundraising,Campaign,Backers,Donor ",
+    seotagline:'Empowering Dreams, One Backer at a Time'
   },
   {
     id: "03",
@@ -27,6 +35,10 @@ const allfrontpagecardsdata = [
     pagedescription:
       "BACKED projects — big and small — have come to life with the support of the BACKED community.",
     pagethumbnailimg: ongoingthumbnail,
+    seotitle:'Mastering the Art of Crowdfunding: A Comprehensive Guide to Fund Your Dreams',
+    seodescription:"Harness the power of the crowd and unleash your project's success through crowdfunding. Our easy-to-follow guide offers practical tips, tactics, and secrets that will empower you to run a compelling campaign, build momentum, and secure the funds you need.",
+    seokeywords:"Crowdfunding,Fundraising,Campaign,Backers,Donor ",
+    seotagline:'Empowering Dreams, One Backer at a Time'
   },
   {
     id: "04",
@@ -34,6 +46,10 @@ const allfrontpagecardsdata = [
     pagedescription:
       "BACKED projects — big and small — have come to life with the support of the BACKED community.",
     pagethumbnailimg: projectdetailthumbnail,
+    seotitle:'Mastering the Art of Crowdfunding: A Comprehensive Guide to Fund Your Dreams',
+    seodescription:"Harness the power of the crowd and unleash your project's success through crowdfunding. Our easy-to-follow guide offers practical tips, tactics, and secrets that will empower you to run a compelling campaign, build momentum, and secure the funds you need.",
+    seokeywords:"Crowdfunding,Fundraising,Campaign,Backers,Donor ",
+    seotagline:'Empowering Dreams, One Backer at a Time'
   },
   {
     id: "05",
@@ -41,20 +57,32 @@ const allfrontpagecardsdata = [
     pagedescription:
       "BACKED projects — big and small — have come to life with the support of the BACKED community.",
     pagethumbnailimg: completeprojectthumbnail,
+    seotitle:'Mastering the Art of Crowdfunding: A Comprehensive Guide to Fund Your Dreams',
+    seodescription:"Harness the power of the crowd and unleash your project's success through crowdfunding. Our easy-to-follow guide offers practical tips, tactics, and secrets that will empower you to run a compelling campaign, build momentum, and secure the funds you need.",
+    seokeywords:"Crowdfunding,Fundraising,Campaign,Backers,Donor ",
+    seotagline:'Empowering Dreams, One Backer at a Time'
   },
   {
     id: "06",
     pagename: "Blog",
     pagedescription:
-      "BACKED projects — big and small — have come to life with the support of the BACKED community.",
+    "BACKED projects — big and small — have come to life with the support of the BACKED community.",
     pagethumbnailimg: blogthumbnail,
+    seotitle:'Mastering the Art of Crowdfunding: A Comprehensive Guide to Fund Your Dreams',
+    seodescription:"Harness the power of the crowd and unleash your project's success through crowdfunding. Our easy-to-follow guide offers practical tips, tactics, and secrets that will empower you to run a compelling campaign, build momentum, and secure the funds you need.",
+    seokeywords:"Crowdfunding,Fundraising,Campaign,Backers,Donor ",
+    seotagline:'Empowering Dreams, One Backer at a Time'
   },
   {
     id: "07",
     pagename: "Contact",
     pagedescription:
-      "BACKED projects — big and small — have come to life with the support of the BACKED community.",
+    "BACKED projects — big and small — have come to life with the support of the BACKED community.",
     pagethumbnailimg: cotactusthumbnail,
+    seotitle:'Mastering the Art of Crowdfunding: A Comprehensive Guide to Fund Your Dreams',
+    seodescription:"Harness the power of the crowd and unleash your project's success through crowdfunding. Our easy-to-follow guide offers practical tips, tactics, and secrets that will empower you to run a compelling campaign, build momentum, and secure the funds you need.",
+    seokeywords:"Crowdfunding,Fundraising,Campaign,Backers,Donor ",
+    seotagline:'Empowering Dreams, One Backer at a Time'
   },
 ];
 export default allfrontpagecardsdata;

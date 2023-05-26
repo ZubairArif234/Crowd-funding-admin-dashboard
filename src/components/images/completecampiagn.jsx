@@ -9,23 +9,51 @@ import React from 'react'
 import { useState } from "react";
 import populararr from '../../pages/data';
 import Popularcard from './layoutofcampaigncard';
+import { Input, Space } from 'antd';
 
 const Compcampaignscard = () => {
 
     const [arrlength , setarrlength] = useState(8)
+    const [searchvalue , setsearchvalue] = useState('')
     const arr = populararr.slice(0, arrlength);
     console.log(arr);
+    const { Search } = Input;
+    const onSearch = (value) =>
+    // const lowervalue = value.tolowercase()
+    setsearchvalue()
+    // console.log(value);
   return (
     <>
-    <p className='addcreatorheading'> Campaigns Management</p>
-    <p className='pendingcampiagnsubtittle'> Completed </p>
+    {/* <div style={{display:'flex'}}> */}
+<div>
+       
+        <p className='addcreatorheading'> Campaigns Management</p>
+        <p className='pendingcampiagnsubtittle'> Completed </p>
+</div>
+{/* <> */}
+
+{/* </> */}
+    
+      {/* </div> */}
     <div className="popularsuparmaindiv">
 
     {/* <div className="popularmaindiv"> */}
         
+      <div style={{display:'flex' , justifyContent:'flex-end'}}>
+
+
+    <Search
+      placeholder="input search text"
+      allowClear
+      enterButton="Search"
+      size="large"
+      onSearch={onSearch}
+      style={{width:'50%', }}
+      />
+      </div>
     <div className="popularcarddiv">
         {
-            arr.map((x) => {
+            arr.filter((a) => a.heading == searchvalue || searchvalue === '').map((x) => {
                 console.log(x.heading);
                 return (
                     <Popularcard

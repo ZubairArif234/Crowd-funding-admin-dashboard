@@ -31,7 +31,7 @@ const Allfrontpagesallcontent = () => {
       {allfrontpagecardsdata.map(( values )=>{
         console.log(values.id);
         return(
-          <Allfrontpagescard key={values.id} id={values.id} heading={values.pagename} description={values.pagedescription} img={values.pagethumbnailimg}/>
+          <Allfrontpagescard key={values.id} id={values.id} heading={values.pagename} description={values.pagedescription} img={values.pagethumbnailimg} seotitle={values.seotitle} seodescription={values.seodescription} seokeywords={values.seokeywords} seotag={values.seotagline}/>
         )
       })}
         {/* <Allfrontpagescard heading={'About'} img={aboutusthumbnail}/>

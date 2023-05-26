@@ -39,13 +39,15 @@ import Apisettingpage from "./apisettingpage";
 import Viewblogs from "./viewblog";
 import Platformsetting from "./platformsetting";
 import Transactiondisputepage from "./transactiondisputepage";
+import Loginpage from "./loginpage";
 // import Addcreator from "./addcreator";
 
 const Router = () => {
   return (
     <BrowserRouter>
     <Routes>
-        <Route path={'/'} element={<Dashboardpage/>}/>
+        <Route path={'/'} element={<Loginpage/>}/>
+        <Route path={'/home'} element={<Dashboardpage/>}/>
         <Route path={'/addcreator'} element={<Addcreator/>}/>
         <Route path={'/viewcreator'} element={<Viewcreator/>}/>
         <Route path={'/creatoranalytics'} element={<Creatoranalyticspage/>}/>

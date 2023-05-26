@@ -14,7 +14,7 @@ import { UploadOutlined } from '@ant-design/icons';
 // import { Button, message, Upload } from 'antd';
 // import homethumbnail from './homethumbnail.png'
 const { Meta } = Card;
-function Allfrontpagescard({heading, description , img , id }) {
+function Allfrontpagescard({heading, description , img , id , seotitle , seodescription,seotag , seokeywords }) {
 
   const [modalShow, setModalShow] = React.useState(false);
   const [pageName, setPageName] = useState(heading);
@@ -129,7 +129,7 @@ const props = {
             <button className='pendingcampaingcards' style={{width:'40%'}} onClick={() => setModalShow(true)} >
                 Quick Edit 
             </button>
-            <button className='pendingcampaingcards' style={{width:'40%'}}  onClick={()=>{navigate('/editallfrontpagescontent')}} >
+            <button className='pendingcampaingcards' style={{width:'40%'}}   >
                 Edit Content
             </button>
           </div>
@@ -168,6 +168,42 @@ const props = {
             <input
               className="addcreatorinput"
               value={pageDescription}
+              onChange={handlePageDescriptionChange}
+            />
+            {/* <br /> */}
+            <br />
+            <label>SEO Title</label>
+            <br />
+            <input
+              className="addcreatorinput"
+              value={seotitle}
+              onChange={handlePageDescriptionChange}
+            />
+            {/* <br /> */}
+            <br />
+            <label>SEO Tag Line</label>
+            <br />
+            <input
+              className="addcreatorinput"
+              value={seotag}
+              onChange={handlePageDescriptionChange}
+            />
+            {/* <br /> */}
+            <br />
+            <label>Meta Description </label>
+            <br />
+            <input
+              className="addcreatorinput"
+              value={seodescription}
+              onChange={handlePageDescriptionChange}
+            />
+            {/* <br /> */}
+            <br />
+            <label>Meta Keywords </label>
+            <br />
+            <input
+              className="addcreatorinput"
+              value={seokeywords}
               onChange={handlePageDescriptionChange}
             />
             <br />
