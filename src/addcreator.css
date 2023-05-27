@@ -15,7 +15,7 @@
     font-size: 18px;
     font-weight: 500;
     font-family: Rubik;
-    color: #140F26;
+    color: gray;
     margin-bottom: 5px;
 }
 .addcreatorinput{
@@ -27,11 +27,31 @@
     /* border: 1px solid #6100B3; */
     border: 1px solid gray;
 }
+.addcreatorp{
+    font-size: 18px;
+    /* margin-bottom: 5px; */
+    width: 100%;
+    /* padding: 7px; */
+    /* border-radius: 5px; */
+    /* outline: none; */
+    /* border: 1px solid #6100B3; */
+    /* border: 1px solid gray; */
+}
+.addcreatorinput{
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    /* border: 1px solid #6100B3; */
+    border: 1px solid gray;
+}
 .addcreatortextarea{
+    margin: 10px;
     margin-bottom: 10px;
     /* margin-left: 10px; */
     /* margin-right: 10px; */
-    width: 100%;
+    width: 98.5%;
     padding: 7px;
     /* margin-top: 5px; */
     border-radius: 5px;
@@ -42,15 +62,15 @@
 }
 .addcreatorsubmitbtn{
     margin-left: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     outline: none;
-    width: 98.5%;
+    width: 250px;
     background-color: #6100B3;
     color: white;
     font-weight: 500;
     font-family: Rubik;
-    font-size: 15px;
+    font-size: 13px;
     padding: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -59,9 +79,9 @@
 .addcreatorheading{
     font-weight: 500;
     font-family: Rubik;
-    font-size: 20px;
+    font-size: 25px;
     color: gray;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 
@@ -70,8 +90,68 @@
     max-height: 495px;
 }
 
+/* .checkboxadminpanel{
 
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    display: grid;
+  place-content: center;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
 
+.checkboxadminpanel::before{
+    content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  } */
+
+input[type="checkbox"]{
+    opacity: 0;
+}
+input[type="checkbox"] + label{
+   position: relative;
+   padding-left: 30px;
+   cursor: pointer;
+   display: inline-block;
+   color: #6100B3;
+   line-height: 25px;
+}
+input[type="checkbox"] + label::before{
+ content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 15px;
+height: 15px;
+outline: 2px solid gray;
+background-color: #fff;
+}
+input[type="checkbox"]:checked + label::before{
+ content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 15px;
+height: 15px;
+outline: 2px solid #6100B3;
+background-size: contain;
+background-image: url('./components/images/check-mark.png');
+background-color: #fff;
+}
 
 
 @media only screen and (max-width: 500px) {

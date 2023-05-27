@@ -73,13 +73,13 @@ const Platformsettingcontent = () => {
 
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-
-                <p className='addcreatorheading' >Platform setting  </p>
-                <button onClick={() => setModalShow(true)} style={{ width: '100px', padding: '5px', border: 'none', color: 'white', backgroundColor: '#6100B3' }}>Edit</button>
-            </div>
             <div className='platformdetails'>
                 <Row>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+
+                <p className='addcreatorheading' style={{color:'black'}} >Platform setting  </p>
+                <button onClick={() => setModalShow(true)} style={{ width: '100px', padding: '5px', border: 'none', color: 'white', backgroundColor: '#6100B3' }}>Edit</button>
+            </div>
                     <Col lg={6}>
                         {/* <div style={{display:'flex' , alignItems:'center'}}> */}
                         <label className='platformfieldskeys'>Website icon : </label>
@@ -95,18 +95,24 @@ const Platformsettingcontent = () => {
                         <br />
                         <label className='platformfieldskeys'>Website Name  </label>
                         {/* <br/> */}
-                        <input className='addcreatorinput' value={'Crowd funding'} readOnly/>
-                        <br />
+                        <p className='addcreatorp' >
+                        Crowd Funding
+                        </p>
+                        {/* <br /> */}
 
                         {/* </div> */}
                         {/* <div style={{display:'flex' , alignItems:'center'}}> */}
                         <label className='platformfieldskeys'>Website Description  </label>
                         {/* <br/> */}
-                        <input className='addcreatorinput' value={'Crowdfunding is the practice of funding a project or venture by raising money from a large'} readOnly/>
+                        <p className='addcreatorp' >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                        </p>
                         {/* <p className='settingsvaluetext'>Crowdfunding is the practice of funding a project or venture by raising money from a large number of people, typically via the internet. Crowdfunding is a form of crowdsourcing and alternative finance. </p> */}
-                        <br />
+                        {/* <br /> */}
                         <label className='platformfieldskeys'>Facebook Link</label>
-                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
+                        <p className='addcreatorp' >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </p>
                         {/* <p className='settingsvaluetext'>
 
                             <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
@@ -117,11 +123,15 @@ const Platformsettingcontent = () => {
 
                             <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
                         </p> */}
-                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
+                        <p className='addcreatorp' >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                        </p>
                         <label className='platformfieldskeys'>Twitter Link</label>
                         {/* <p className='settingsvaluetext'> */}
 
-                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
+                        <p className='addcreatorp' >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                        </p>
                             {/* <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a> */}
                         {/* </p> */}
 
@@ -129,36 +139,46 @@ const Platformsettingcontent = () => {
                         {/* </div> */}
                     </Col>
                     <Col lg={6}>
-                        <label className='platformfieldskeys'>SEO Tittle</label>
+                        <label className='platformfieldskeys'>SEO Tittle:</label>
                         {/* <p className='settingsvaluetext'>
                             Zubair arif
                             <a href='https://www.facebook.com/'>https://www.facebook.com/</a>
                         </p> */}
-                        <input className='addcreatorinput' value={' Zubair arif'} readOnly/>
+                        <p className='addcreatorp' >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </p>
                         <label className='platformfieldskeys'>SEO Description</label>
                         {/* <p className='settingsvaluetext'>
                             A passionate developer and Crowdfunding is the practice of funding a project or venture by raising money from a large number of people, typically via the internet. Crowdfunding is a form of crowdsourcing and alternative finance.
                             <a href='https://www.facebook.com/'>https://www.facebook.com/</a>
                         </p> */}
-                        <input className='addcreatorinput' value={' A passionate developer and Crowdfunding is the practice of funding a project or venture by raising money '} readOnly/>
+                        <p className='addcreatorp' >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
                         <label className='platformfieldskeys'>SEO Keyword</label>
                         {/* <p className='settingsvaluetext'>
                             React , Javascript , Passionate
 
                         </p> */}
-                        <input className='addcreatorinput' value={' React , Javascript , Passionate'} readOnly/>
+                        <p className='addcreatorp' >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                        </p>
                         <label className='platformfieldskeys'>Private policy URL</label>
                         {/* <p className='settingsvaluetext'>
 
                             <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
                         </p> */}
-                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
+<p className='addcreatorp' >
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                        </p>
                         <label className='platformfieldskeys'>Terms and Condition URL</label>
                         {/* <p className='settingsvaluetext'>
 
                             <a className='settingsvaluetextlinks' href='https://www.facebook.com/'>https://www.facebook.com/</a>
                         </p> */}
-                        <input className='addcreatorinput' value={'https://www.facebook.com/'} readOnly/>
+                      <p className='addcreatorp' >
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </p>
 
                     </Col>
                 </Row>
@@ -248,7 +268,11 @@ const Platformsettingcontent = () => {
                         {errors.terms_conditions && touched.terms_conditions ? <span style={{ color: 'red', fontSize: '13px' }}>{errors.terms_conditions}</span> : null}
 
 
-                        <button className='editplatformsettingsbtn' type='submit'>Save Changes</button>
+                        <div style={{display:'flex', justifyContent:'flex-end'}}>
+
+
+<button className='addcreatorsubmitbtn' type='submit'> Save Changes</button>
+</div>
                     </form>
                 </Modal.Body>
                 {/* <Modal.Footer>

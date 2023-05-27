@@ -172,10 +172,7 @@ const Financialreports = () => {
     <Form form={form} component={false}>
         <p className='addcreatorheading'>Financial Reports</p>
       <Table
-       scroll={{
-        x: 'auto',
-        y: 450,
-      }}
+      
         components={{
           body: {
             cell: EditableCell,
@@ -187,6 +184,7 @@ const Financialreports = () => {
         rowClassName="editable-row"
         pagination={{
           onChange: cancel,
+          pageSize:8
         }}
       />
     </Form>

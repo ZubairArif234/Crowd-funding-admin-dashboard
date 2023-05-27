@@ -50,76 +50,78 @@ const Apisettingpagecontent = () => {
 
     return (
         <div>
+            <div className='platformdetails'>
+                <Row>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
                 <p className='addcreatorheading' >Api Settings </p>
                 <button onClick={() => setModalShow(true)} style={{ width: '100px', padding: '5px', border: 'none', color: 'white', backgroundColor: '#6100B3' }}>Edit</button>
             </div>
-            <div className='platformdetails'>
-                <Row>
                     <Col lg={6}>
                         {/* <div style={{display:'flex' , alignItems:'center'}}> */}
 
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        {/* <br/> */}
-                        <br />
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
+                       
                         <label className='platformfieldskeys'>Paypal Client ID</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        {/* <br/> */}
-                        <br />
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
+                        
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        {/* <br/> */}
-                        <br />
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        {/* <br/> */}
-                        <br />
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        <br />
-                        {/* <br/> */}
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        <br />
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                     </Col>
                     <Col lg={6}>
                         <label className='platformfieldskeys'>Stripe public API</label>
-                        <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        <br />
-                        {/* <br/> */}
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        {/* <br/> */}
-                        <br />
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        <br />
-                        {/* <br/> */}
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
+                        <label className='platformfieldskeys'>Stripe public API</label>
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        {/* <br/> */}
-                        <br />
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                         <label className='platformfieldskeys'>Stripe public API</label>
                         <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        {/* <br/> */}
-                        <br />
-                        <label className='platformfieldskeys'>Stripe public API</label>
-                        <br />
-                        <input className='addcreatorinput' value={'llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838'} readOnly />
-                        <br />
+                        <p className='addcreatorp'  >
+                        llf34345j89jfld/s0-sjk4o047rhjkk97983jkdhksoncu9838
+                        </p>
                     </Col>
                 </Row>
             </div>
@@ -213,7 +215,11 @@ const Apisettingpagecontent = () => {
                         {errors.api12 && touched.api12 ? <span style={{ color: 'red', fontSize: '13px' }}>{errors.api12}</span> : null}
                         <br />
 
-                        <button className='editplatformsettingsbtn' type='submit'>Save Changes</button>
+                        <div style={{display:'flex', justifyContent:'flex-end'}}>
+
+
+          <button className='addcreatorsubmitbtn' type='submit'>Save Changes</button>
+          </div>
                     </form>
                 </Modal.Body>
                 {/* <Modal.Footer>

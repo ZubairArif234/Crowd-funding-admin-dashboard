@@ -175,10 +175,7 @@ const Userstatistics = () => {
     <Form form={form} component={false}>
         <p className='addcreatorheading'>User Analytics</p>
       <Table
-       scroll={{
-        x: 'auto',
-        y: 450,
-      }}
+      
         components={{
           body: {
             cell: EditableCell,
@@ -189,7 +186,7 @@ const Userstatistics = () => {
         columns={mergedColumns}
         rowClassName="editable-row"
         pagination={{
-          onChange: cancel,
+          pageSize:8,
         }}
       />
     </Form>

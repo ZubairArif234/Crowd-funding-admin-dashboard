@@ -19,9 +19,9 @@ const Allfrontpagesallcontent = () => {
     console.log(arr);
   return (
     <>
-    <p className='addcreatorheading'> All Front Pages List</p>
     {/* <p className='pendingcampiagnsubtittle'> Pending </p> */}
     <div className="popularsuparmaindiv">
+    <p className='addcreatorheading' style={{marginLeft:'40px'}}> All Front Pages List</p>
 
     {/* <div className="popularmaindiv"> */}
         

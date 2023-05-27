@@ -125,13 +125,13 @@ const props = {
         <div className="popprogressprice">
             <p style={{fontFamily:'Rubik'}}>{description}</p>
          
-          <div style={{display:'flex', justifyContent:'space-between'}}>
+          <div style={{display:'flex', justifyContent:'flex-end'}}>
             <button className='pendingcampaingcards' style={{width:'40%'}} onClick={() => setModalShow(true)} >
-                Quick Edit 
+                 Edit Content
             </button>
-            <button className='pendingcampaingcards' style={{width:'40%'}}   >
+            {/* <button className='pendingcampaingcards' style={{width:'40%'}}   >
                 Edit Content
-            </button>
+            </button> */}
           </div>
          
         </div>
@@ -147,7 +147,7 @@ const props = {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Quick Edit
+          Edit Content
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -208,9 +208,11 @@ const props = {
             />
             <br />
             {/* Add other form fields here */}
-            <button style={{margin:'10px auto' , width:'100%'}} className="addcreatorsubmitbtn" type="submit">
-              Submit
-            </button>
+            <div style={{display:'flex', justifyContent:'flex-end'}}>
+
+
+<button className='addcreatorsubmitbtn' type='submit'>Save Changes</button>
+</div>
           </form>
       </Modal.Body>
       {/* <Modal.Footer>

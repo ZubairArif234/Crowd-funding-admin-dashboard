@@ -2,8 +2,13 @@
 
 
 
+
+
+
+
 import { Form, InputNumber, Popconfirm, Table, Typography,Input } from 'antd';
 import { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
 
 
 
@@ -18,7 +23,8 @@ for (let i = 0; i < 100; i++) {
     age: 32,
     phone: `12345${i}878${i}`,
     gender:'male',
-    country:`pakistan${i}`
+    country:`pakistan${i}`,
+    catagories:`Creator${i}`
 
   });
 }
@@ -56,7 +62,8 @@ const EditableCell = ({
     </td>
   );
 };
-const Viewinvestortable = () => {
+const Userstatistics = () => {
+  const [modalShow, setModalShow] = useState(false);
   const [form] = Form.useForm();
   const [data, setData] = useState(originData);
   const [editingKey, setEditingKey] = useState('');
@@ -79,6 +86,7 @@ const Viewinvestortable = () => {
       const row = await form.validateFields();
       const newData = [...data];
       const index = newData.findIndex((item) => key === item.key);
+      console.log(newData);
       if (index > -1) {
         const item = newData[index];
         newData.splice(index, 1, {
@@ -124,7 +132,7 @@ const Viewinvestortable = () => {
     {
       title: 'Age',
       dataIndex: 'age',
-      width: '10%',
+      width: '5%',
       editable: true,
     },
     {
@@ -146,33 +154,17 @@ const Viewinvestortable = () => {
       editable: true,
     },
     {
-      title: 'operation',
-      dataIndex: 'operation',
-      render: (_, record) => {
-        const editable = isEditing(record);
-        return editable ? (
-          <span>
-            <Typography.Link
-              onClick={() => save(record.key)}
-              style={{
-                marginRight: 8,
-              }}
-            >
-              Save
-            </Typography.Link>
-            <Popconfirm title="Sure to cancel?" onConfirm={cancel}>
-              <a>Cancel</a>
-            </Popconfirm>
-          </span>
-        ) : (
-          <Typography.Link disabled={editingKey !== ''} onClick={() => edit(record)}>
-            Edit
-          </Typography.Link>
-        );
-      },
+      title: 'Catagories',
+      dataIndex: 'catagories',
+    },
+    {
+      title: 'Edit',
+      dataIndex: 'catagories',
+      render: () => {return <button onClick={() => setModalShow(true)} style={{backgroundColor:'#6100B3' , border:'none' , borderRadius:'5px' , padding:'5px 10px' , color:'white' , fontFamily:'Rubik' , fontSize:'13px', textAlign:"center"}} >Edit</button>},
     },
   ];
   const mergedColumns = columns.map((col) => {
+
     if (!col.editable) {
       return col;
     }
@@ -188,14 +180,12 @@ const Viewinvestortable = () => {
     };
   });
   return (
-
+<>
     <Form form={form} component={false}>
-        <p className='addcreatorheading'>View and Edit Investor</p>
+        <p className='addcreatorheading'>View Investor</p>
       <Table
-       scroll={{
-        x: 2000,
-        y: 450,
-      }}
+      style={{marginTop:'20px'}}
+     
         components={{
           body: {
             cell: EditableCell,
@@ -206,10 +196,60 @@ const Viewinvestortable = () => {
         columns={mergedColumns}
         rowClassName="editable-row"
         pagination={{
-          onChange: cancel,
+          pageSize:6
         }}
-      />
+        />
     </Form>
+    <Modal
+       show={modalShow}
+       onHide={() => setModalShow(false)}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Edit Investor
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <form>
+        <label className='addcreatorlabel' htmlFor='first_name'>First Name</label>
+        <br />
+            <input className='addcreatorinput'  name='first_name' id='first_name' type='text' placeholder='Enter First Name' />
+       <br/>
+        <label className='addcreatorlabel' htmlFor='first_name'>Email</label>
+        <br />
+            <input className='addcreatorinput'  name='first_name' id='first_name' type='text' placeholder='Enter Email' />
+       <br/>
+        <label className='addcreatorlabel' htmlFor='first_name'>Age</label>
+        <br />
+            <input className='addcreatorinput'  name='first_name' id='first_name' type='text' placeholder='Enter Age' />
+       <br/>
+        <label className='addcreatorlabel' htmlFor='first_name'>Phone no</label>
+        <br />
+            <input className='addcreatorinput'  name='first_name' id='first_name' type='text' placeholder='Enter Phone no' />
+       <br/>
+        <label className='addcreatorlabel' htmlFor='first_name'>Gender </label>
+        <br />
+            <input className='addcreatorinput'  name='first_name' id='first_name' type='text' placeholder='Enter Gender' />
+       <br/>
+
+        <label className='addcreatorlabel' htmlFor='first_name'>Catagories </label>
+        <br />
+            <input className='addcreatorinput'  name='first_name' id='first_name' type='text' placeholder='Enter Catagories' />
+       <br/>
+       <div style={{display:'flex', justifyContent:'flex-end'}}>
+
+
+          <button className='addcreatorsubmitbtn' type='submit' onClick={(e)=>e.preventDefault()}> Save Changes</button>
+          </div>
+        </form>
+     
+      </Modal.Body>
+   
+    </Modal>
+        </>
   );
 };
-export default Viewinvestortable;
+export default Userstatistics;

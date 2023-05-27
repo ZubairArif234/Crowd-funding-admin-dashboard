@@ -242,10 +242,10 @@ const Addcreatorpagecontent = () => {
 
   return (
     <div>
-      <p className='addcreatorheading'>Create New Creator</p>
 
       <form onSubmit={handleSubmit}>
         <Row className='addcreatorformrow'>
+      <p className='addcreatorheading'>Create New Creator</p>
           <Col lg={6} className='addcreatorformcol'>
 
             <label className='addcreatorlabel' htmlFor='first_name'>First Name</label>
@@ -388,21 +388,37 @@ const Addcreatorpagecontent = () => {
           <label className='addcreatorlabel' htmlFor='address'>Street Address</label>
           <br />
           <textarea className='addcreatortextarea' onChange={handleChange} onBlur={handleBlur} value={values.address} name='address' id='address' placeholder='Street Address...' cols={20} rows={4}></textarea>
-          {errors.address && touched.address ? <span style={{ color: 'red', fontSize: '13px' }}>{errors.address}</span> : null}
+          {errors.address && touched.address ? <span style={{ color: 'red', fontSize: '13px'}}>{errors.address}</span> : null}
           <br />
           <div>
-            <input id='private_policy' onChange={handleChange} onBlur={handleBlur} value={values.private_policy} name='private_policy' type='checkbox' style={{ marginRight: '10px' }} />
+            <input id='terms_conditions' onChange={handleChange} onBlur={handleBlur} value={values.terms_conditions} name='terms_conditions' type='checkbox'  />
 
-            <label htmlFor='private_policy' style={{ fontFamily: 'Rubik' }}>Accept Terms and conditions</label>
-            {errors.private_policy && touched.private_policy ? <span style={{ color: 'red', fontSize: '13px' }}>{errors.private_policy}</span> : null}
+            <label htmlFor='terms_conditions' style={{ fontFamily: 'Rubik' }}>Accept Terms and conditions</label>
+            
+            {errors.terms_conditions && touched.terms_conditions ? <span style={{ color: 'red', fontSize: '13px', marginLeft:"15px" }}>{errors.terms_conditions}</span> : null}
             <br />
-            <input htmlFor='terms_conditions' onChange={handleChange} onBlur={handleBlur} value={values.terms_conditions} name='terms_conditions' type='checkbox' style={{ marginRight: '10px' }} />
+            <input
+  htmlFor="private_policy"
+  onChange={handleChange}
+  onBlur={handleBlur}
+  value={values.private_policy}
+  name="private_policy"
+  id="private_policy"
+  type="checkbox"
+  
+/>
 
-            <label id='terms_conditions' style={{ fontFamily: 'Rubik' }}>Agree to the Privacy Policy</label>
-            {errors.terms_conditions && touched.terms_conditions ? <span style={{ color: 'red', fontSize: '13px' }}>{errors.terms_conditions}</span> : null}
+<label htmlFor="private_policy" style={{ fontFamily: 'Rubik' }}>
+  Agree to the Privacy Policy
+</label>
+            {errors.private_policy && touched.private_policy ? <span style={{ color: 'red', fontSize: '13px' , marginLeft:"15px"}}>{errors.private_policy}</span> : null}
 
           </div>
-          <button className='addcreatorsubmitbtn' type='submit'>Submit</button>
+          <div style={{display:'flex', justifyContent:'flex-end'}}>
+
+
+          <button className='addcreatorsubmitbtn' type='submit'>Create Creator</button>
+          </div>
         </Row>
       </form>
     </div>

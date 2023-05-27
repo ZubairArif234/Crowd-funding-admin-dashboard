@@ -111,13 +111,15 @@
     padding: 0px 10px;
 }
 .topheaderdashboardbox{
-    width: 250px;
+    width: 200px;
     margin-right: 20px;
     display: flex;
     /* background-color: yellow; */
     align-items: center;
+    justify-self: flex-end;
     justify-content: space-evenly;
 }
+
 
 .topheaderdashboardmainbox{
     /* background-color: #6100B3; */
@@ -165,6 +167,14 @@ font-size: 13px !important;
     color: #5B5B5B;
     text-decoration: none;
 }
+.activaccordianlink{
+    font-size: 13px !important;
+    padding: 5px;
+    font-family: Rubik;
+    text-decoration: none;
+    color: #0c63e4;
+    margin: 5px;
+}
 .accordianlinks{
     padding: 5px;
     font-size: 13px !important;
@@ -183,8 +193,8 @@ font-size: 13px !important;
 
 
 @media only screen and (max-width: 1000px) {
-
-.graphimgtopboxes{
+    
+    .graphimgtopboxes{
     
 }
 /* .dashboardcardtopone{} */
@@ -212,3 +222,13 @@ font-size: 13px !important;
 }
 
 }
+    @media only screen and (max-width: 500px) {
+        .logoimg{
+width: 140px;
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        .logoimg{
+display: none;
+        }
+    }

@@ -52,19 +52,16 @@ const Blogpagecontent = () => {
     return (
         <div>
 
-            <p className='addcreatorheading' >Add Blog</p>
             <form>
                 <Row className='addcreatorformrow'>
+            <p className='addcreatorheading' >Add Blog</p>
                     <Col lg={6} className='addcreatorformcol'>
 
                         <label className='addcreatorlabel'>Blog Title</label>
                         <br />
                         <input className='addcreatorinput' type='text' placeholder='Enter First Name' />
 
-                        {/* <br/>
-                <label className='addcreatorlabel'>Middle Name</label>
-<br/>
-<input className='addcreatorinput' type='text' placeholder='Enter Middle Name'/> */}
+                       
                         <br />
                         <label className='addcreatorlabel'>Author </label>
                         <br />
@@ -78,9 +75,9 @@ const Blogpagecontent = () => {
                         <Popover content={content} title="Remember"trigger="hover" >
                             <i className="fas fa-circle-info" ></i>
                         </Popover>
-                        {/* </div> */}
+                        
                         <br />
-                        {/* <ImgCrop rotationSlider> */}
+                        
                             <Upload
                               
                                 listType="picture-card"
@@ -91,16 +88,8 @@ const Blogpagecontent = () => {
                             >
                                 {fileList.length < 5 && '+ Upload'}
                             </Upload>
-                        {/* </ImgCrop> */}
-                        <br />
-                        {/* <br/>
-                <label className='addcreatorlabel'>Confirm Password</label>
-                <br/>
-                <input className='addcreatorinput' type='password' placeholder='Confirm Password'/>
-                <br/>
-                <label className='addcreatorlabel'>Artist/Band Name </label>
-                <br/>
-            <input className='addcreatorinput' type='password' placeholder='Enter Artist/Band Name'/> */}
+                      
+                      
 
                     </Col>
 
@@ -108,7 +97,7 @@ const Blogpagecontent = () => {
                         <label className='addcreatorlabel'>Blog Catagories</label>
                         <br />
                        <select className='addcreatorinput'>
-                        <option>Select Catagories</option>
+                        <option style={{padding:'5px'}}>Select Catagories</option>
                         <option>Pop</option>
                         <option>Hip Hop</option>
                         <option>Jazz</option>
@@ -119,7 +108,7 @@ const Blogpagecontent = () => {
                         <label className='addcreatorlabel'>SEO Title</label>
                         <br />
                         <input className='addcreatorinput' type='text' placeholder='Enter SEO Title' />
-                        {/* <div> */}
+                        
                         <br />
                         <label className='addcreatorlabel'>SEO Keyword</label>
                         <br />
@@ -127,28 +116,17 @@ const Blogpagecontent = () => {
                         <br />
                         <label className='addcreatorlabel'>SEO Description</label>
                         <br />
-                        {/* <input className='addcreatorinput' type='email' placeholder='Enter Email' /> */}
-                        <textarea className='addcreatortextarea'  placeholder='Enter SEO Descripton...' cols={16} rows={4}></textarea>
-                        {/* <br/>
-                <label className='addcreatorlabel'>State</label>
-                <br/>
-<input className='addcreatorinput' type='text' placeholder='Enter State'/> */}
-                        {/* <br />
-                        <label className='addcreatorlabel'>City</label>
-                        <br />
-                        <input className='addcreatorinput' type='text' placeholder='Enter City' />
-                        <br />
-                        <label className='addcreatorlabel'>Phone no</label>
-                        <br />
-                        <input className='addcreatorinput' type='number' placeholder='Enter Phone no' />
-                        <br />
-                        <label className='addcreatorlabel'>Date of birth</label>
-                        <br />
-                        <input className='addcreatorinput' type='date' placeholder='Enter Phone no' /> */}
+                       
+                        <textarea className='addcreatortextarea'  placeholder='Enter SEO Descripton...' style={{marginLeft:'0px'}} cols={16} rows={4}></textarea>
+                      
                     </Col>
                     <label className='addcreatorlabel'>Blog Content</label>
                     <textarea className='addcreatortextarea' placeholder='Add blog Content...' cols={20} rows={4}></textarea>
-                    <button className='addcreatorsubmitbtn'>Submit</button>
+                    <div style={{display:'flex', justifyContent:'flex-end'}}>
+
+
+<button className='addcreatorsubmitbtn' type='submit' onClick={(e)=>e.preventDefault()}>Create Blog</button>
+</div>
                 </Row>
             </form>
         </div>

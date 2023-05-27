@@ -28,7 +28,7 @@ const Viewblogcards = ({img ,heading ,text , catagories}) => {
     bordered={false}
     className='pendingcampaigncard'
     style={{
-      width: '280px',
+      width: '310px',
       borderRadius: "0",
       marginBottom:'20px',
       padding:'0px'

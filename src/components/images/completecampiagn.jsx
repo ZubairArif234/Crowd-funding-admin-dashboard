@@ -25,21 +25,21 @@ const Compcampaignscard = () => {
   return (
     <>
     {/* <div style={{display:'flex'}}> */}
-<div>
+{/* <div> */}
        
-        <p className='addcreatorheading'> Campaigns Management</p>
-        <p className='pendingcampiagnsubtittle'> Completed </p>
-</div>
+{/* </div> */}
 {/* <> */}
 
 {/* </> */}
     
       {/* </div> */}
     <div className="popularsuparmaindiv">
+        <p className='addcreatorheading'> Campaigns Management</p>
+        <p className='pendingcampiagnsubtittle' style={{marginLeft:'0px'}}> Completed </p>
 
     {/* <div className="popularmaindiv"> */}
         
-      <div style={{display:'flex' , justifyContent:'flex-end'}}>
+      {/* <div style={{display:'flex' , justifyContent:'flex-end'}}>
 
 
     <Search
@@ -50,7 +50,7 @@ const Compcampaignscard = () => {
       onSearch={onSearch}
       style={{width:'50%', }}
       />
-      </div>
+      </div> */}
     <div className="popularcarddiv">
         {
             arr.filter((a) => a.heading == searchvalue || searchvalue === '').map((x) => {

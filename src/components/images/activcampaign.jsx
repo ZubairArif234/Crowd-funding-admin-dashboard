@@ -14,9 +14,9 @@ const Activcampaignscard = () => {
     console.log(arr);
   return (
     <>
-    <p className='addcreatorheading'> Campaigns Management</p>
-    <p className='pendingcampiagnsubtittle'> Pending </p>
     <div className="popularsuparmaindiv">
+    <p className='addcreatorheading'> Campaigns Management</p>
+    <p className='pendingcampiagnsubtittle' style={{marginLeft:'0px'}}> Pending </p>
 
     {/* <div className="popularmaindiv"> */}
         

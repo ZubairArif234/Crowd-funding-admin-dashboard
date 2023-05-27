@@ -49,10 +49,10 @@ const Addinvestorpagecontent = () => {
    const country_list = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla", "Antigua &amp; Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia &amp; Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Cape Verde", "Cayman Islands", "Chad", "Chile", "China", "Colombia", "Congo", "Cook Islands", "Costa Rica", "Cote D Ivoire", "Croatia", "Cruise Ship", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Estonia", "Ethiopia", "Falkland Islands", "Faroe Islands", "Fiji", "Finland", "France", "French Polynesia", "French West Indies", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kuwait", "Kyrgyz Republic", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Mauritania", "Mauritius", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Montserrat", "Morocco", "Mozambique", "Namibia", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russia", "Rwanda", "Saint Pierre &amp; Miquelon", "Samoa", "San Marino", "Satellite", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "South Africa", "South Korea", "Spain", "Sri Lanka", "St Kitts &amp; Nevis", "St Lucia", "St Vincent", "St. Lucia", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Timor L'Este", "Togo", "Tonga", "Trinidad &amp; Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks &amp; Caicos", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "Uruguay", "Uzbekistan", "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"];
   return (
     <div>
-        <p className='addcreatorheading'>Create New Investor</p>
 
         <form onSubmit={handleSubmit}>
             <Row className='addcreatorformrow'>
+        <p className='addcreatorheading'>Create New Investor</p>
                 <Col lg={6} className='addcreatorformcol'>
 
 <label className='addcreatorlabel' htmlFor='first_name'>First Name</label>
@@ -194,19 +194,33 @@ const Addinvestorpagecontent = () => {
                 <textarea className='addcreatortextarea' onChange={handleChange} onBlur={handleBlur} value={values.address} name='address' id='address' placeholder='Street Address...' cols={20} rows={4}></textarea>
 {errors.address && touched.address ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.address}</span> : null}
                 <div>
-<input type='checkbox' id='private_policy' onChange={handleChange} onBlur={handleBlur} value={values.private_policy} name='private_policy' style={{marginRight:'10px'}}/>
+                <input id='terms_conditions' onChange={handleChange} onBlur={handleBlur} value={values.terms_conditions} name='terms_conditions' type='checkbox'  />
 
-<label style={{fontFamily:'Rubik' }} htmlFor='private_policy'>Accept Terms and conditions</label>
-<br/>
-{errors.private_policy && touched.private_policy ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.private_policy}</span> : null}
-<br />
-<input type='checkbox'onChange={handleChange} onBlur={handleBlur} value={values.terms_conditions} name='terms_conditions' style={{marginRight:'10px'}}/>
+<label htmlFor='terms_conditions' style={{ fontFamily: 'Rubik' }}>Accept Terms and conditions</label>
 
-<label style={{fontFamily:'Rubik' }} htmlFor='terms_conditions'>Agree to the Privacy Policy</label>
+{errors.terms_conditions && touched.terms_conditions ? <span style={{ color: 'red', fontSize: '13px', marginLeft:"15px" }}>{errors.terms_conditions}</span> : null}
 <br />
-{errors.terms_conditions && touched.terms_conditions ? <span style={{color:'red' ,fontSize:'13px'}}>{errors.terms_conditions}</span> : null}
+<input
+htmlFor="private_policy"
+onChange={handleChange}
+onBlur={handleBlur}
+value={values.private_policy}
+name="private_policy"
+id="private_policy"
+type="checkbox"
+
+/>
+
+<label htmlFor="private_policy" style={{ fontFamily: 'Rubik' }}>
+Agree to the Privacy Policy
+</label>
+{errors.private_policy && touched.private_policy ? <span style={{ color: 'red', fontSize: '13px' , marginLeft:"15px"}}>{errors.private_policy}</span> : null}
 </div>
-           <button className='addcreatorsubmitbtn'>Submit</button>
+<div style={{display:'flex', justifyContent:'flex-end'}}>
+
+
+<button className='addcreatorsubmitbtn' type='submit'>Create Investor</button>
+</div>
             </Row>
         </form>
     </div>
